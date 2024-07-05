@@ -1,0 +1,5 @@
+download/*
+venv/*
+__pycache__/
+common\browser_chrome_binary.py
+# secret_credentials.py

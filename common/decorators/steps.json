@@ -1,0 +1,10 @@
+{
+
+    "4.1": "Login into Zelis Portal",
+    "4.2": "Search the Amount in the Payment Amount section > Match the date and payer to find the required transaction",
+    "4.2.1": "If you find EOB & 835 File for Required transaction: go to step 4.3",
+    "4.2.3": "If you don't find the EOB & 835 File, update spreadsheet",
+    "4.3": "Download 835 file: Select Options 835(5010) in the dropdown and then click Download button",
+    "4.3.1": "Download EOB: Select option PDF in the dropdown and then click Download"
+
+}
