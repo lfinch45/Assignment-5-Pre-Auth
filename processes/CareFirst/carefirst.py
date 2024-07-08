@@ -1,5 +1,5 @@
 from common import Browser, Credentials, retry
-from processes.CareFirst.locators import Locators
+from .locators import Locators
 
 
 class CareFirst(Browser):

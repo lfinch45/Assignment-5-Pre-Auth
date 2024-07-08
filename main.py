@@ -6,7 +6,7 @@ bot = Runners()
 
 def run_bot():
     # bot.run_artera() # AS FAR AS I CAN GET
-    # bot.run_care_first()
+    bot.run_care_first()
     # bot.run_carelon()
     # bot.run_care_source()
     # bot.run_cgs()

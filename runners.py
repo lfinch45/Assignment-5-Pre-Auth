@@ -1,22 +1,5 @@
 from common import Credentials
-from processes.Artera.artera import Artera
-from processes.CareFirst.carefirst import CareFirst
-from processes.Carelon.carelon import Carelon
-from processes.CareSource.caresource import CareSource
-from processes.CGS.cgs import CGS
-from processes.Cohere.cohere import Cohere
-from processes.Epic.epic import Epic
-from processes.Everence.everence import Everence
-from processes.Evicore.evicore import Evicore
-from processes.HealthHelp.healthhelp import HealthHelp
-from processes.HumanaMilitary.humanamilitary import HumanaMilitary
-from processes.IndianaMCD.indianamcd import IndianaMCD
-from processes.Jiva.jiva import Jiva
-from processes.MDWISE.mdwise import MDWISE
-from processes.MHS.mhs import MHS
-from processes.PHP.php import PHP
-from processes.TurningPoint.turningpoint import TurningPoint
-from processes.UnifiedGroup.unifiedgroup import UnifiedGroup
+from processes import Artera, CareFirst, Carelon, CareSource, CGS, Cohere, Epic, Everence, Evicore, HealthHelp, HumanaMilitary, IndianaMCD, Jiva, MDWISE, MHS, PHP, TurningPoint, UnifiedGroup
 from secret_credentials import Secrets
 
 
