@@ -4,6 +4,7 @@ class Secrets:
         url='https://app.wellapp.com/login/staff?iss=https%3A%2F%2Fauth-prod.wellapp.com%2F'
         username='luke'	
         password='123124123'
+        email = 'lfinch@joriehc.com'
     
     class CareFirst:
         url='https://provider.carefirst.com/prv/#/login'
@@ -22,7 +23,7 @@ class Secrets:
 
     class CGS:
         url='https://mycgsportal.com/MyCGS/CGSAccount/Login'
-        username='luke'	
+        username='lukefinch'	
         password='123124123'
 
     class Cohere:
@@ -34,6 +35,7 @@ class Secrets:
         url='https://carelink.parkview.com/CareLink/common/epic_login.asp'
         username='luke'	
         password='123124123'
+        customer_id = "6789"
 
     class Everence:
         url='https://secure.healthx.com/v3app/publicservice/loginv1/login.aspx?bc=ea743607-b29a-401a-b86d-8e7b3229f472&serviceid=2904462f-baff-414c-a514-e4f229c926e6'
@@ -44,21 +46,26 @@ class Secrets:
         url='https://www.evicore.com/'
         username='luke'	
         password='123124123'
+        customer_id = "6789"
 
     class HealthHelp:
         url='https://portal.healthhelp.com/Login/Login.asp'
         username='luke'	
         password='123124123'
+        customer_id = '6789'
 
     class HumanaMilitary:
         url='https://infocenter.humana-military.com/provider/service/account/login'
         username='luke'	
         password='123124123'
+        customer_id = '6789'
 
     class IndianaMCD:
         url='https://portal.indianamedicaid.com/hcp/provider/Home/tabid/135/Default.aspx'
         username='luke'	
         password='123124123'
+        customer_id = '6789'
+        city_born = 'Dallas'
 
     class Jiva:
         url='https://jiva.chpw.org/cms/ProviderPortal/Controller/providerLogin'
@@ -66,7 +73,7 @@ class Secrets:
         password='123124123'
 
     class MDWISE:
-        url='https://www.mdwise.org/mdwise/mymdwise-provider-portal'
+        url='https://secure.healthx.com/v3app/publicservice/loginv1/login.aspx?bc=140edb51-4359-4498-97fb-f3e03585cc45&serviceid=cf586464-3acb-404f-a45d-2b69103fa64a' # Changed for efficiency
         username='luke'	
         password='123124123'
 
@@ -74,16 +81,19 @@ class Secrets:
         url='https://mhsindiana.entrykeyid.com/as/authorization.oauth2?response_type=code&client_id=16800994-446b-45db-8f1b-3fa0e812162f&scope=openid%20profile&state=CeVf7lItoa394ihvK6yD4QdK4PNxjgCuPgiM3PjBbd4%3D&redirect_uri=https://provider.mhsindiana.com/careconnect/login/oauth2/code/pingcloud&code_challenge_method=S256&nonce=b4XBnd-v4nNHQFBGJhXn4ngWUZTUBy87-z19qCjir4g&code_challenge=AH9kbkLkDabSx2mH9jWTjN5F4F3uGz8OtajGnYb4HZM&app_origin=https://provider.mhsindiana.com/careconnect/login/oauth2/code/pingcloud&brand=mhsindiana'
         username='luke'	
         password='123124123'
+        email = 'lfinch@joriehc.com'
 
     class PHP:
-        url='https://app.wellapp.com/login/staff?iss=https%3A%2F%2Fauth-prod.wellapp.com%2F' # CHANGE
+        url='https://secureportals.phpni.com/login/provider#!/'
         username='luke'	
         password='123124123'
+        email = 'lfinch@joriehc.com'
 
     class TurningPoint:
         url='https://myturningpoint-healthcare.com/'
         username='luke'	
         password='123124123'
+        email = 'lfinch@joriehc.com'
 
     class UnifiedGroup:
         url='https://secure.healthx.com/v3app/publicservice/loginv1/login.aspx?bc=aaaf1ad8-3fd5-4a58-b1f3-7f1b0cdae6a1&serviceid=8a7ac279-393a-44cd-a21d-bb42033b720c'

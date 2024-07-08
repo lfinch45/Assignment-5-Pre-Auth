@@ -7,7 +7,6 @@ class CareSource(Browser):
         super(CareSource, self).__init__()
         self.credentials = credentials
 
-    # SAMPLE FUNCTION, CHANGE IF NECESSARY
     @retry()
     def login(self):
         self.browser.open_available_browser(self.credentials.url)

@@ -1,5 +1,4 @@
-# SAMPLE LOCATORS, CHANGE IF NECCESSARY
 class Locators:
-    username = '//*[@id="username"]'
-    password = '//*[@id="password"]'
-    login_button = '//button[contains(text(), "Login")]'
+    user_id = '//*[@id="Account_ID"]'
+    password = '//*[@id="Account_Password"]'
+    login_button = '//*[@id="LoginButton"]'

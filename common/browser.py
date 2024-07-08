@@ -7,7 +7,7 @@ from .browser_chrome_binary import chrome_binary
 class Browser(ABC):
 
     def __init__(self):
-        self.browser = Selenium(timeout=15, implicit_wait=15, page_load_timeout=15)
+        self.browser = Selenium(timeout=30, implicit_wait=30, page_load_timeout=30)
         self._original_open_available_browser = self.browser.open_available_browser
         self.browser.open_available_browser = self.custom_open_available_browser
         self.browser.set_download_directory("download")

@@ -1,5 +1,4 @@
-# SAMPLE LOCATORS, CHANGE IF NECCESSARY
 class Locators:
-    username = '//*[@id="username"]'
-    password = '//*[@id="password"]'
-    login_button = '//button[contains(text(), "Login")]'
+    username = '//*[@id="okta-signin-username"]'
+    password = '//*[@id="okta-signin-password"]'
+    login_button = '//*[@id="okta-signin-submit"]'

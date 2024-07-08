@@ -7,10 +7,10 @@ class Cohere(Browser):
         super(Cohere, self).__init__()
         self.credentials = credentials
 
-    # SAMPLE FUNCTION, CHANGE IF NECESSARY
     @retry()
     def login(self):
         self.browser.open_available_browser(self.credentials.url)
         self.browser.input_text_when_element_is_visible(Locators.username, self.credentials.username)
+        self.browser.click_element_when_clickable(Locators.next_button)
         self.browser.input_text_when_element_is_visible(Locators.password, self.credentials.password)
-        self.browser.click_element_when_clickable(Locators.login_button)
+        self.browser.click_element_when_clickable(Locators.signin_button)

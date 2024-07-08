@@ -1,5 +1,5 @@
-# SAMPLE LOCATORS, CHANGE IF NECCESSARY
 class Locators:
-    username = '//*[@id="username"]'
-    password = '//*[@id="password"]'
-    login_button = '//button[contains(text(), "Login")]'
+    username = '//*[@id="okta-signin-username"]'
+    password = '//*[@id="okta-signin-password"]'
+    remember_user_checkbox = "//input[@type='checkbox' and @id='input41']" # Doesn't work
+    login_button = '//button[.//span[contains(text(), "Login")]]'

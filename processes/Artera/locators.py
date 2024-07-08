@@ -1,5 +1,7 @@
-# SAMPLE LOCATORS, CHANGE IF NECCESSARY
+# NOT ABLE TO GET PAST CONTINUE BUTTON (MAKING ME ENTER VERIFICATION CODE)
 class Locators:
-    username = '//*[@id="username"]'
-    password = '//*[@id="password"]'
-    login_button = '//button[contains(text(), "Login")]'
+    email = '//*[@id=":r0:"]'
+    continue_button = '//button[contains(text(), "Continue")]'
+    # verification_code = '//*[@id=":r0:"]'
+    # password = '//*[@id="password"]' 
+    # login_button = '//button[contains(text(), "Login")]'

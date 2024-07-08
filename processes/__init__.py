@@ -1,4 +1,3 @@
-# from .zelis.zelis import Zelis
 from .Artera.artera import Artera
 from .CareFirst.carefirst import CareFirst
 from .Carelon.carelon import Carelon
@@ -17,3 +16,4 @@ from .MHS.mhs import MHS
 from .PHP.php import PHP
 from .TurningPoint.turningpoint import TurningPoint
 from .UnifiedGroup.unifiedgroup import UnifiedGroup
+# REMEMBER TO IMPORT OSMANAGER
