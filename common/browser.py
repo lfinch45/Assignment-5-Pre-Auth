@@ -12,6 +12,11 @@ class Browser(ABC):
         self.browser.open_available_browser = self.custom_open_available_browser
         self.browser.set_download_directory("download")
 
+    def change_to_frame(self, frame_xpath: str):
+        self.browser.unselect_frame()
+        self.browser.wait_until_element_is_visible(frame_xpath, timeout=60 * 2)
+        iframe = self.browser.find_element(frame_xpath)
+        self.browser.select_frame(iframe)
     
     def custom_open_available_browser(self, url):
         browser_options = {"arguments": ["--incognito", "--no-sandbox", "--disable-dev-shm-usage", "--remote-debugging-pipe"], "capabilities": {"acceptInsecureCerts": True}}
