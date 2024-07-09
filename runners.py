@@ -1,11 +1,12 @@
 from common import Credentials
 from processes import Artera, CareFirst, Carelon, CareSource, CGS, Cohere, Epic, Everence, Evicore, HealthHelp, HumanaMilitary, IndianaMCD, Jiva, MDWISE, MHS, PHP, TurningPoint, UnifiedGroup
+from processes.OSManager import OSManager
 from secret_credentials import Secrets
 
 
 class Runners:
-    def __init__(self):
-        pass
+    def __init__(self, directory=None):
+        self.directory = directory
     
     
     def run_artera(self):
@@ -97,3 +98,14 @@ class Runners:
         unified_group_credentials = Credentials(url=Secrets.UnifiedGroup.url, username=Secrets.UnifiedGroup.username, password=Secrets.UnifiedGroup.password)
         unified_group = UnifiedGroup(credentials=unified_group_credentials)
         unified_group.login()
+
+    def run_OS_manager(self, directory):
+        os_manager = OSManager(directory)
+        # file_contents = os_manager.read_files()
+        # print(file_contents)
+
+        # last_element = os_manager.get_most_recent_element()
+        # print(last_element)
+
+        renamed_file = os_manager.rename(r"C:\Users\LukeFinch\OneDrive - Jorie Healthcare\Desktop\IntelligentlyExtractTextExtractInformationFromBusinessCardWebApp_files\main.css", 123456)
+        print(renamed_file)

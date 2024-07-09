@@ -23,8 +23,7 @@ def run_bot():
     # bot.run_php()
     # bot.run_turning_point()
     # bot.run_unified_group()
-    pass
-
+    bot.run_OS_manager(r"C:\Users\LukeFinch\OneDrive - Jorie Healthcare\Desktop\IntelligentlyExtractTextExtractInformationFromBusinessCardWebApp_files")
 
 if __name__ == "__main__":
 
