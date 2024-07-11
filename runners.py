@@ -107,5 +107,19 @@ class Runners:
         # last_element = os_manager.get_most_recent_element()
         # print(last_element)
 
-        renamed_file = os_manager.rename(r"C:\Users\LukeFinch\OneDrive - Jorie Healthcare\Desktop\IntelligentlyExtractTextExtractInformationFromBusinessCardWebApp_files\main.css", 123456)
-        print(renamed_file)
+        # renamed_file = os_manager.rename('main.css', '123456')
+        # print(renamed_file)
+        
+        # os_manager.delete_file('ad.png')
+
+        # os_manager.add_file('luke\'s_file.txt', 'This is my newly created file')
+        # os_manager.rename('luke\'s_file.txt', 'luke\'s_new_file')
+        
+        # os_manager.add_text_to_file('luke\'s_new_file.txt', '\nAdding to this file')
+
+        # os_manager.remove_text_from_file('luke\'s_new_file.txt', 'this')
+        
+        # line_number = os_manager.find_line_number('luke\'s_new_file.txt', 'file')
+        # print(line_number)
+
+        os_manager.find_text_in_file('luke\'s_new_file.txt', 'Adding')
