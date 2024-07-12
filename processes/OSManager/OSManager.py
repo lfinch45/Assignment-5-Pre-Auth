@@ -74,16 +74,26 @@ class OSManager:
         with open(file_path, 'a') as file:
             file.write(new_content)
         
+    # Edit this with try block
     def remove_text_from_file(self, file_name, text_to_remove):
         file_path = os.path.join(self.directory, file_name)
 
-        with open(file_path, 'r') as file:
-            contents = file.read()
-        
-        new_contents = contents.replace(text_to_remove, '')
+        try: 
+            with open(file_path, 'r') as file:
+                contents = file.read()
+            
+            if text_to_remove not in file_path:
+                raise ValueError(f"'{text_to_remove}' not in {file_name}.")
+            
+            new_contents = contents.replace(text_to_remove, '')
 
-        with open(file_path, 'w') as file:
-            file.write(new_contents)
+            with open(file_path, 'w') as file:
+                file.write(new_contents)
+
+        except ValueError as ve:
+            print(ve)
+        except Exception as e:
+            print(f"An error occured: {e}")
 
     def find_line_number(self, file_name, substring):
         file_path = os.path.join(self.directory, file_name)
@@ -94,10 +104,10 @@ class OSManager:
                     return line_number
         return None
 
-    def find_text_in_file(self, file_name, text_to_find) -> bool:
+    def find_text_in_file(self, file_name, text_to_find) -> str:
         file_path = os.path.join(self.directory, file_name)
         with open(file_path, 'r') as file:
             contents = file.read()
         
         if text_to_find in contents:
-            print(f"The text: '{text_to_find}' is on line {self.find_line_number(file_name, text_to_find)}.")
+            return f"The text: '{text_to_find}' is on line {self.find_line_number(file_name, text_to_find)}."

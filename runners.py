@@ -117,9 +117,9 @@ class Runners:
         
         # os_manager.add_text_to_file('luke\'s_new_file.txt', '\nAdding to this file')
 
-        # os_manager.remove_text_from_file('luke\'s_new_file.txt', 'this')
+        # os_manager.remove_text_from_file('luke\'s_new_file.txt', 'thksdkis')
         
         # line_number = os_manager.find_line_number('luke\'s_new_file.txt', 'file')
         # print(line_number)
 
-        os_manager.find_text_in_file('luke\'s_new_file.txt', 'Adding')
+        # print(os_manager.find_text_in_file('luke\'s_new_file.txt', 'Adding'))
